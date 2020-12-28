@@ -1,7 +1,7 @@
 {
   "babelMacros": {
     "twin": {
-      "preset": "styled-components"
+      "preset": "emotion"
     }
   },
   "scripts": {
@@ -14,15 +14,20 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@lottiefiles/react-lottie-player": "^2.2.2",
     "gatsby": "^2.26.1",
-    "gatsby-plugin-styled-components": "^3.4.0",
+    "gatsby-plugin-emotion": "^5.0.0",
+    "postcss": "^8.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.1",
     "twin.macro": "^2.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
     "prettier": "^2.1.2"
   }
 }

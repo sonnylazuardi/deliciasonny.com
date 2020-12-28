@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('../../static/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #D6CFC1;
+}
+
+.container {
+  width: 100%
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 768px
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 768px
+  }
+}

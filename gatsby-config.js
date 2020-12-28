@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [`gatsby-plugin-styled-components`]
+  plugins: [{ resolve: `gatsby-plugin-emotion` }]
 }
