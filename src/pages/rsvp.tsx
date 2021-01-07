@@ -21,15 +21,13 @@ const supabase = createClient(
 
 const Rsvp = () => {
   const [pin, setPin] = useQueryParam('pin', StringParam)
-  const [dropdown, setDropdown] = React.useState(false)
-  const [person, setPerson] = React.useState(0)
   const { register, errors, handleSubmit } = useForm()
 
   const onSubmit = (data) => {
     let loadingToast = toast.loading('Please wait...')
     supabase
       .from('rsvp')
-      .insert([{ ...data, person }])
+      .insert([data])
       .then(({ data, error }) => {
         if (!error) {
           toast.success('Your attendance confirmation has been recorded.', {
@@ -48,12 +46,6 @@ const Rsvp = () => {
       navigate('/')
     }
   }, [])
-
-  React.useEffect(() => {
-    if (person > 0) {
-      setDropdown(false)
-    }
-  }, [person])
 
   return (
     <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden`}>
@@ -117,66 +109,24 @@ const Rsvp = () => {
                 </div>
               </div>
               <div tw="mb-10">
-                <div tw="relative inline-block text-left">
-                  <div>
-                    <button
-                      type="button"
-                      tw="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                      id="options-menu"
-                      aria-haspopup="true"
-                      aria-expanded="true"
-                      onClick={() => setDropdown((v) => !v)}
-                    >
-                      {person == 0
-                        ? 'Choose number of people coming'
-                        : `${person} Person${person > 1 ? 's' : ''}`}
-                      <svg
-                        tw="-mr-1 ml-2 h-5 w-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  {dropdown ? (
-                    <div tw="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                      <div
-                        tw="py-1"
-                        role="menu"
-                        aria-orientation="vertical"
-                        aria-labelledby="options-menu"
-                      >
-                        <a
-                          onClick={() => setPerson(1)}
-                          tw="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                          role="menuitem"
-                        >
-                          1 Person
-                        </a>
-                        <a
-                          onClick={() => setPerson(2)}
-                          tw="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                          role="menuitem"
-                        >
-                          2 Persons
-                        </a>
-                      </div>
-                    </div>
-                  ) : null}
+                <select
+                  css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
+                  name="person"
+                  ref={register({ validate: (value) => value !== '' })}
+                >
+                  <option selected value="">
+                    Choose number of people comings
+                  </option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 Persons</option>
+                </select>
+                <div tw="text-xs text-red-400">
+                  {errors.name && 'Please choose number of people'}
                 </div>
               </div>
               <div tw="flex mb-4 items-center justify-center">
                 <div tw="py-4">
-                  <Button isPrimary={true} disabled={person === 0}>
-                    Submit
-                  </Button>
+                  <Button isPrimary={true}>Submit</Button>
                 </div>
               </div>
             </div>

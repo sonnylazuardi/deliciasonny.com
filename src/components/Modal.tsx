@@ -6,6 +6,14 @@ import { navigate } from 'gatsby'
 
 const Modal = ({ setShowModal }) => {
   const [pin, setPin] = React.useState('')
+  const onSubmit = () => {
+    if (pin === process.env.GATSBY_PIN_CODE) {
+      navigate(`/rsvp?pin=${pin}`)
+      toast.success('Welcome... Please fill the RSVP form.')
+    } else {
+      toast.error('Incorrect PIN. Please try again.')
+    }
+  }
   return (
     <div css={tw`fixed h-screen w-screen left-0 top-0 z-20`}>
       <div
@@ -29,20 +37,22 @@ const Modal = ({ setShowModal }) => {
           <form
             onSubmit={(e) => {
               e.preventDefault()
-              if (pin === process.env.GATSBY_PIN_CODE) {
-                navigate(`/rsvp?pin=${pin}`)
-              }
-              toast.error('Incorrect PIN. Please try again.')
+              onSubmit()
             }}
           >
             <input
-              autoFocus={true}
               css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
               type="text"
               aria-label="Enter PIN"
               placeholder="Enter PIN"
               value={pin}
               onChange={(e) => setPin(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.currentTarget.blur()
+                  onSubmit()
+                }
+              }}
             />
             <Button isPrimary={true}>Submit</Button>
           </form>
