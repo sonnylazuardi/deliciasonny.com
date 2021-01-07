@@ -7,6 +7,7 @@ import { navigate } from 'gatsby'
 const Modal = ({ setShowModal }) => {
   const [pin, setPin] = React.useState('')
   const onSubmit = () => {
+    toast.dismiss()
     if (pin === process.env.GATSBY_PIN_CODE) {
       navigate(`/rsvp?pin=${pin}`)
       toast.success('Welcome... Please fill the RSVP form.')
