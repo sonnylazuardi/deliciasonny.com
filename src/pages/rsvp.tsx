@@ -106,7 +106,7 @@ const Rsvp = () => {
                   aria-label="Full Name (Nama Lengkap)"
                   placeholder="Full Name (Nama Lengkap)"
                 />
-                <div tw="text-xs text-red-400">
+                <div tw="text-xs text-gold-900">
                   {errors.name && 'Your Name is required'}
                 </div>
               </div>
@@ -120,7 +120,7 @@ const Rsvp = () => {
                   aria-label="Email"
                   placeholder="Email"
                 />
-                <div tw="text-xs text-red-400">
+                <div tw="text-xs text-gold-900">
                   {errors.name && 'Your Email is required'}
                 </div>
               </div>
@@ -134,12 +134,12 @@ const Rsvp = () => {
                   aria-label="WhatsApp Number (Nomor WhatsApp)"
                   placeholder="WhatsApp Number (Nomor WhatsApp)"
                 />
-                <div tw="text-xs text-red-400">
+                <div tw="text-xs text-gold-900">
                   {errors.name && 'Your WhatsApp Number is required'}
                 </div>
               </div>
-              <div tw="mb-10">
-                <label tw="inline-flex items-center">
+              <div tw="mb-10 flex flex-col">
+                <label tw="mb-4">
                   <input
                     type="radio"
                     tw="form-radio"
@@ -150,7 +150,7 @@ const Rsvp = () => {
                   />
                   <span tw="ml-2">Yes, I will attend the wedding</span>
                 </label>
-                <label tw="inline-flex items-center ml-6">
+                <label tw="mb-4">
                   <input
                     type="radio"
                     tw="form-radio"
@@ -161,7 +161,7 @@ const Rsvp = () => {
                   />
                   <span tw="ml-2">Sorry, I cannot attend the wedding</span>
                 </label>
-                <div tw="text-xs text-red-400">
+                <div tw="text-xs text-gold-900">
                   {errors.attending && 'Please choose your attendance'}
                 </div>
               </div>
@@ -182,7 +182,7 @@ const Rsvp = () => {
                     <option value="1">1 Person</option>
                     <option value="2">2 (With Partner)</option>
                   </select>
-                  <div tw="text-xs text-red-400">
+                  <div tw="text-xs text-gold-900">
                     {errors.name && 'Please choose number of people'}
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const Rsvp = () => {
                     aria-label="Partner's Full Name"
                     placeholder="Partner's Full Name"
                   />
-                  <div tw="text-xs text-red-400">
+                  <div tw="text-xs text-gold-900">
                     {errors.plusone && "Your Partner's Name is required"}
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const Rsvp = () => {
               MATRIMONY
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">16.00 WIB - 18.00 WIB</div>
+              <div tw="text-lg mb-4">17.00 WITA - 18.00 WITA</div>
             </div>
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
@@ -242,7 +242,7 @@ const Rsvp = () => {
               RECEPTION
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">18.00 WIB - 21.00 WIB</div>
+              <div tw="text-lg mb-4">19.00 WITA - 21.00 WITA</div>
             </div>
           </div>
 
