@@ -54,7 +54,7 @@ const App = () => {
                 <div tw="flex mb-4">
                   <Link
                     isPrimary={true}
-                    href="https://www.youtube.com/channel/UCBO11RvIOYXB7fWbbvloqPw"
+                    href="https://www.youtube.com/channel/UCr7oYUQ44RT52UvtcnewOfw"
                   >
                     Live Stream
                   </Link>
@@ -62,7 +62,7 @@ const App = () => {
                 <div tw="flex">
                   <Link
                     isSecondary={true}
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Bali%2C%20Indonesia&details=Holy%20Matrimony"
+                    href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Holy%20Matrimony&location=Bali%2C%20Indonesia&details=Holy%20Matrimony%20Live%20Streaming%3A%20https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr7oYUQ44RT52UvtcnewOfw"
                   >
                     Add to Calendar
                   </Link>
@@ -107,7 +107,20 @@ const App = () => {
 
             <div tw="">Transfer via BCA</div>
             <div tw="font-bold text-2xl">8090138651</div>
-            <div tw="mb-4 font-bold">Sonny Lazuardi Hermawan</div>
+            <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
+
+            <div tw="">Transfer via Paypal</div>
+            <div tw="flex items-center justify-center">
+              <div tw="p-8">
+                <Link
+                  isSecondary={true}
+                  href="https://www.paypal.me/sonnylazuardi"
+                  tw="mb-4 font-bold"
+                >
+                  Paypal Sonny
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

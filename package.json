@@ -39,6 +39,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.1",
     "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "@tailwindcss/custom-forms": "^0.2.1",
     "prettier": "^2.1.2"
   }
 }

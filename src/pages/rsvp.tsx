@@ -22,10 +22,13 @@ const supabase = createClient(
 
 const Rsvp = () => {
   const [pin, setPin] = useQueryParam('pin', StringParam)
+  const [showPerson, setShowPerson] = React.useState(false)
+  const [showPlusOne, setShowPlusOne] = React.useState(false)
   const { register, errors, handleSubmit } = useForm()
 
   const onSubmit = (data) => {
     let loadingToast = toast.loading('Please wait...')
+    if (!data.person) data.person = 0
     supabase
       .from('rsvp')
       .insert([data])
@@ -64,6 +67,16 @@ const Rsvp = () => {
     }
   }, [])
 
+  const changeRadio = (event) => {
+    const { name, value } = event.target
+    if (value === 'false') {
+      setShowPerson(false)
+      setShowPlusOne(false)
+    } else {
+      setShowPerson(true)
+    }
+  }
+
   return (
     <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden`}>
       <div
@@ -76,7 +89,7 @@ const Rsvp = () => {
           </GLink>
         </div>
       </div>
-      <div tw="py-24 bg-white relative">
+      <div tw="py-24 bg-gold-100 relative">
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
           <div tw="text-4xl sm:text-5xl font-poppin font-bold text-gold-900 text-center mb-12">
             RSVP
@@ -126,21 +139,70 @@ const Rsvp = () => {
                 </div>
               </div>
               <div tw="mb-10">
-                <select
-                  css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4 appearance-none`}
-                  name="person"
-                  ref={register({ validate: (value) => value !== '' })}
-                >
-                  <option selected value="">
-                    Choose number of people comings
-                  </option>
-                  <option value="1">1 Person</option>
-                  <option value="2">2 Persons</option>
-                </select>
+                <label tw="inline-flex items-center">
+                  <input
+                    type="radio"
+                    tw="form-radio"
+                    name="attending"
+                    value="true"
+                    ref={register({ validate: (val) => val != '' })}
+                    onChange={(e) => changeRadio(e)}
+                  />
+                  <span tw="ml-2">Yes, I will attend the wedding</span>
+                </label>
+                <label tw="inline-flex items-center ml-6">
+                  <input
+                    type="radio"
+                    tw="form-radio"
+                    name="attending"
+                    value="false"
+                    ref={register({ validate: (val) => val != '' })}
+                    onChange={(e) => changeRadio(e)}
+                  />
+                  <span tw="ml-2">Sorry, I cannot attend the wedding</span>
+                </label>
                 <div tw="text-xs text-red-400">
-                  {errors.name && 'Please choose number of people'}
+                  {errors.attending && 'Please choose your attendance'}
                 </div>
               </div>
+              {showPerson ? (
+                <div tw="mb-10">
+                  <select
+                    css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4 appearance-none`}
+                    name="person"
+                    ref={register({ validate: (val) => val != '' })}
+                    onChange={(e) => {
+                      if (e.target.value === '2') {
+                        setShowPlusOne(true)
+                      } else {
+                        setShowPlusOne(false)
+                      }
+                    }}
+                  >
+                    <option value="1">1 Person</option>
+                    <option value="2">2 (With Partner)</option>
+                  </select>
+                  <div tw="text-xs text-red-400">
+                    {errors.name && 'Please choose number of people'}
+                  </div>
+                </div>
+              ) : null}
+              {showPlusOne ? (
+                <div tw="mb-10 ">
+                  <label>Partner's Full Name</label>
+                  <input
+                    name="plusone"
+                    ref={register({ required: true })}
+                    css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
+                    type="text"
+                    aria-label="Partner's Full Name"
+                    placeholder="Partner's Full Name"
+                  />
+                  <div tw="text-xs text-red-400">
+                    {errors.plusone && "Your Partner's Name is required"}
+                  </div>
+                </div>
+              ) : null}
               <div tw="flex mb-4 items-center justify-center">
                 <div tw="py-4">
                   <Button isPrimary={true}>Submit</Button>
@@ -196,7 +258,7 @@ const Rsvp = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white relative">
+      <div tw="py-24 bg-gold-100 relative">
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
