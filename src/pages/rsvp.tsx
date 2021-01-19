@@ -9,6 +9,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import toast, { Toaster } from 'react-hot-toast'
 
 import { useForm } from 'react-hook-form'
+import fetch from 'isomorphic-fetch'
 
 const position = [-8.816462, 115.088558]
 
@@ -30,9 +31,27 @@ const Rsvp = () => {
       .insert([data])
       .then(({ data, error }) => {
         if (!error) {
-          toast.success('Your attendance confirmation has been recorded.', {
-            id: loadingToast
-          })
+          if (data[0]) {
+            toast.success('Please check your email.', {
+              id: loadingToast
+            })
+
+            fetch(`https://hooks.zapier.com/hooks/catch/9243627/o004b9z/`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                name: data[0].name,
+                email: data[0].email,
+                userId: data[0].id
+              })
+            })
+              .then((res) => res.json())
+              .then((res) => {
+                console.log('RES', res)
+              })
+          }
           navigate('#schedule')
         } else {
           toast.error(error.message, {
