@@ -6,7 +6,6 @@ import QRImage from '../images/qrocbc.png'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Butterfly from '../images/butterfly.json'
 import Modal from '../components/Modal'
-
 const App = () => {
   const [showModal, setShowModal] = React.useState(false)
   return (
