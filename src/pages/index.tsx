@@ -51,8 +51,13 @@ const App = () => {
               <div tw="text-lg">16.00 WIB</div>
               <div tw="text-lg mb-4">17.00 SGT</div>
               <div tw="px-12">
-                <div tw="mb-4">
-                  <Button isPrimary={true}>Live Stream</Button>
+                <div tw="flex mb-4">
+                  <Link
+                    isPrimary={true}
+                    href="https://www.youtube.com/channel/UCBO11RvIOYXB7fWbbvloqPw"
+                  >
+                    Live Stream
+                  </Link>
                 </div>
                 <div tw="flex">
                   <Link
@@ -69,7 +74,7 @@ const App = () => {
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
               WEDDING
               <br />
-              RECEPTION
+              RSVP
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest">
               <div tw="font-brittany text-4xl mb-8">Invitation Only</div>
