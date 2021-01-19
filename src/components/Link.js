@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro'
 
 const Link = styled.a(({ isPrimary, isSecondary, isSmall }) => [
   // The common button styles added with the tw import
-  tw`font-sans font-semibold px-8 py-4 rounded-xl focus:outline-none`,
+  tw`font-sans font-semibold px-8 py-4 rounded-xl focus:outline-none tracking-normal`,
   tw`transform transition-transform duration-75 w-full`,
 
   // Use the variant grouping feature to add variants to multiple classes

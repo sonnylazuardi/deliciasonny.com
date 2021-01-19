@@ -1,7 +1,8 @@
 import React from 'react'
 import tw from 'twin.macro'
-import { Logo, Layout, Button } from '../components'
+import { Logo, Layout, Button, Link } from '../components'
 import GroomsBride from '../images/groomsbride.png'
+import QRImage from '../images/qrocbc.png'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Butterfly from '../images/butterfly.json'
 import Modal from '../components/Modal'
@@ -38,7 +39,7 @@ const App = () => {
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
             Wedding Schedule
           </div>
-          <div tw="grid grid-cols-2 gap-4 text-center font-times text-gold-900 py-20">
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
               HOLY
               <br />
@@ -50,11 +51,21 @@ const App = () => {
               <div tw="text-lg">16.00 WIB</div>
               <div tw="text-lg mb-4">17.00 SGT</div>
               <div tw="px-12">
-                <Button isPrimary={true}>Live Stream</Button>
+                <div tw="mb-4">
+                  <Button isPrimary={true}>Live Stream</Button>
+                </div>
+                <div tw="flex">
+                  <Link
+                    isSecondary={true}
+                    href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Bali%2C%20Indonesia&details=Holy%20Matrimony"
+                  >
+                    Add to Calendar
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div tw="grid grid-cols-2 gap-4 text-center font-times text-gold-900 py-20">
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
               WEDDING
               <br />
@@ -72,6 +83,30 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-gold-100 relative">
+        <div
+          className="container"
+          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
+        >
+          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-64 -right-32 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
+            Electronic Giving
+          </div>
+          <div
+            tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
+            style={{ maxWidth: 640 }}
+          >
+            <div tw="">Transfer via OCBC QR</div>
+            <div tw="font-bold text-2xl">545-810-22349-9</div>
+            <div tw="mb-4 font-bold">Delicia Ulyta</div>
+            <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
+
+            <div tw="">Transfer via BCA</div>
+            <div tw="font-bold text-2xl">8090138651</div>
+            <div tw="mb-4 font-bold">Sonny Lazuardi Hermawan</div>
+          </div>
+        </div>
+      </div>
+      <div tw="py-24 bg-white relative">
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
@@ -113,7 +148,7 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white relative text-center font-sans">
-        © 2020 by{' '}
+        © 2021 by{' '}
         <a href="https://sonnylab.com" tw="font-semibold">
           sonnylab
         </a>
