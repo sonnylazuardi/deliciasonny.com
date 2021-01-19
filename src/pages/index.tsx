@@ -85,7 +85,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-gold-100 relative">
+      <div tw="py-24 bg-white bg-opacity-30 relative">
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
@@ -95,7 +95,7 @@ const App = () => {
             Our Sweet Little Story
           </div>
           <div
-            tw="mx-auto w-full leading-loose font-sans"
+            tw="mx-auto w-full leading-loose font-sans p-1"
             style={{ maxWidth: 640 }}
           >
             <img src="/images/story.png" tw="w-full" />
