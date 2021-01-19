@@ -33,6 +33,7 @@ const App = () => {
       </div>
       <div tw="py-24 bg-white relative">
         <div tw="absolute left-0 right-0 h-10 bg-white" style={{ top: -40 }} />
+        <div tw="absolute -top-10 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
             Wedding Schedule
@@ -86,13 +87,13 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white bg-opacity-30 relative">
+        <div tw="absolute top-0 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-72 -right-20 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
-            Our Sweet Little Story
+            Our Little Story
           </div>
           <div
             tw="mx-auto w-full leading-loose font-sans p-1"
@@ -103,11 +104,11 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white relative">
+        <div tw="absolute top-0 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-72 -right-20 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
             Electronic Giving
           </div>
@@ -139,7 +140,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white relative text-center font-sans">
+      <div tw="py-24 bg-gold-100 relative text-center font-sans">
         © 2021 by{' '}
         <a href="https://sonnylab.com" tw="font-semibold">
           sonnylab
