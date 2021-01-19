@@ -78,7 +78,7 @@ const Rsvp = () => {
       </div>
       <div tw="py-24 bg-white relative">
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
+          <div tw="text-4xl sm:text-5xl font-poppin font-bold text-gold-900 text-center mb-12">
             RSVP
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -159,12 +159,12 @@ const Rsvp = () => {
             Wedding Schedule
           </div>
 
-          <div tw="text-3xl sm:text-2xl font-poppin text-gold-900 text-center mb-12 mt-12">
+          <div tw="text-xl sm:text-2xl font-poppin font-bold text-gold-900 text-center mb-12 mt-12">
             Saturday, 20th March 2021
           </div>
 
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900">
-            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
+            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
               HOLY
               <br />
               MATRIMONY
@@ -174,7 +174,7 @@ const Rsvp = () => {
             </div>
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
-            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
+            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
               WEDDING
               <br />
               RECEPTION
