@@ -250,7 +250,7 @@ const Rsvp = () => {
             <div tw="flex">
               <Link
                 isSecondary={true}
-                href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Bali%2C%20Indonesia&details="
+                href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T130000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Venue%3A%20Kamaya%20Bali%20Wedding%20&details=Venue%3A%20Kamaya%20Bali%20Wedding%20%20https%3A%2F%2Fgoo.gl%2Fmaps%2FjS3UQ2idTiM8tAGN9"
               >
                 Add to Calendar
               </Link>

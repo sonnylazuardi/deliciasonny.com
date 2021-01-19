@@ -96,34 +96,10 @@ const App = () => {
             Our Sweet Little Story
           </div>
           <div
-            tw="mx-auto w-full p-4 leading-loose font-sans"
+            tw="mx-auto w-full leading-loose font-sans"
             style={{ maxWidth: 640 }}
           >
-            <p tw="mb-6">
-              Delicia and Sonny started to know each other from Facebook even
-              they were in the same university. They first met at a cafe in
-              Central Jakarta. While they had a great time getting to know each
-              other through the night, it was love at first sight.
-            </p>
-
-            <p tw="mb-6">
-              As time goes by, they got comfortable with each other, and decided
-              to be more than just friends.
-            </p>
-
-            <p tw="mb-6">
-              1 year of being together in long distance relationship have made
-              Delicia & Sonny realized that despite their opposite
-              personalities, they truly are the happiest when they’re together.
-            </p>
-
-            <p tw="mb-6">
-              At the beginning of 2020, Sonny proposed to Delicia.
-            </p>
-
-            <p tw="mb-6">
-              However, the pandemic happened, they decided to get married.{' '}
-            </p>
+            <img src="/images/story.png" tw="w-full" />
           </div>
         </div>
       </div>
