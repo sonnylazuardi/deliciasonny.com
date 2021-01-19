@@ -21,8 +21,7 @@ const App = () => {
         <div tw="w-full sm:w-3/5 -mt-8">
           <img src={GroomsBride} />
         </div>
-        <div tw="absolute sm:-left-32 sm:h-80 sm:w-80 -bottom-24 -left-24 w-64 h-64 bg-contain bg-gingko z-10" />
-        <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-24 -right-24 w-56 h-56 bg-contain transform rotate-180 bg-gingko z-10" />
+        <div tw="absolute sm:-right-10 sm:h-64 sm:w-64 -top-24 -right-24 w-56 h-56 bg-contain transform rotate-180 bg-gingko z-10" />
         <div tw="w-20 h-20 absolute sm:bottom-64 sm:left-10 left-0 bottom-48">
           <Player
             autoplay={true}
@@ -92,44 +91,7 @@ const App = () => {
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-64 -right-32 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
-            Electronic Giving
-          </div>
-          <div
-            tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
-            style={{ maxWidth: 640 }}
-          >
-            <div tw="">Transfer via OCBC QR</div>
-            <div tw="font-bold text-2xl">545-810-22349-9</div>
-            <div tw="mb-4 font-bold">Delicia Ulyta</div>
-            <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
-
-            <div tw="">Transfer via BCA</div>
-            <div tw="font-bold text-2xl">8090138651</div>
-            <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
-
-            <div tw="">Transfer via Paypal</div>
-            <div tw="flex items-center justify-center">
-              <div tw="p-8">
-                <Link
-                  isSecondary={true}
-                  href="https://www.paypal.me/sonnylazuardi"
-                  tw="mb-4 font-bold"
-                >
-                  Paypal Sonny
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div tw="py-24 bg-white relative">
-        <div
-          className="container"
-          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
-        >
-          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-64 -right-32 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
+          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-72 -right-20 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
             Our Sweet Little Story
           </div>
@@ -162,6 +124,43 @@ const App = () => {
             <p tw="mb-6">
               However, the pandemic happened, they decided to get married.{' '}
             </p>
+          </div>
+        </div>
+      </div>
+      <div tw="py-24 bg-white relative">
+        <div
+          className="container"
+          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
+        >
+          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-72 -right-20 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
+            Electronic Giving
+          </div>
+          <div
+            tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
+            style={{ maxWidth: 640 }}
+          >
+            <div tw="">Transfer via OCBC QR</div>
+            <div tw="font-bold text-2xl">545-810-22349-9</div>
+            <div tw="mb-4 font-bold">Delicia Ulyta</div>
+            <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
+
+            <div tw="">Transfer via BCA</div>
+            <div tw="font-bold text-2xl">8090138651</div>
+            <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
+
+            <div tw="">Transfer via Paypal</div>
+            <div tw="flex items-center justify-center">
+              <div tw="p-8">
+                <Link
+                  isSecondary={true}
+                  href="https://www.paypal.me/sonnylazuardi"
+                  tw="mb-4 font-bold"
+                >
+                  Paypal Sonny
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
