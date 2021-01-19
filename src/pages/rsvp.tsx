@@ -33,6 +33,7 @@ const Rsvp = () => {
           toast.success('Your attendance confirmation has been recorded.', {
             id: loadingToast
           })
+          navigate('#schedule')
         } else {
           toast.error(error.message, {
             id: loadingToast
@@ -133,12 +134,57 @@ const Rsvp = () => {
           </form>
         </div>
       </div>
-      <div tw="py-24 bg-gold-100 relative">
+      <div tw="py-24 bg-white relative" id="schedule">
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
         >
-          <div tw="absolute sm:-right-20 sm:h-64 sm:w-64 -top-64 -right-32 w-64 h-64 bg-contain transform rotate-180 bg-gingko z-10" />
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-20 mt-12">
+            Wedding Schedule
+          </div>
+
+          <div tw="text-3xl sm:text-2xl font-poppin text-gold-900 text-center mb-12 mt-12">
+            Saturday, 20th March 2021
+          </div>
+
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900">
+            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
+              HOLY
+              <br />
+              MATRIMONY
+            </div>
+            <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
+              <div tw="text-lg mb-4">16.00 WIB - 18.00 WIB</div>
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
+            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12">
+              WEDDING
+              <br />
+              RECEPTION
+            </div>
+            <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
+              <div tw="text-lg mb-4">18.00 WIB - 21.00 WIB</div>
+            </div>
+          </div>
+
+          <div tw="px-12">
+            <div tw="flex">
+              <Link
+                isSecondary={true}
+                href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Bali%2C%20Indonesia&details=Holy%20Matrimony"
+              >
+                Add to Calendar
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tw="py-24 bg-white relative">
+        <div
+          className="container"
+          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
+        >
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
             Location
           </div>
