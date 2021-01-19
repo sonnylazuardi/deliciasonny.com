@@ -38,9 +38,6 @@ const Rsvp = () => {
 
             fetch(`https://hooks.zapier.com/hooks/catch/9243627/o004b9z/`, {
               method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
               body: JSON.stringify({
                 name: data[0].name,
                 email: data[0].email,
