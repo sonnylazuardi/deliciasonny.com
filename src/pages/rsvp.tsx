@@ -39,17 +39,18 @@ const Rsvp = () => {
               id: loadingToast
             })
 
-            fetch(
-              `https://app.integrately.com/a/webhooks/e9e1e34f465a4790a8543dd7f251d417`,
-              {
-                method: 'POST',
-                body: JSON.stringify({
+            fetch(`https://plugin-api.sonnylab.com/bypasscors`, {
+              method: 'POST',
+              body: JSON.stringify({
+                url: `https://app.integrately.com/a/webhooks/e9e1e34f465a4790a8543dd7f251d417`,
+                json: true,
+                body: {
                   name: data[0].name,
                   email: data[0].email,
                   userId: data[0].id
-                })
-              }
-            )
+                }
+              })
+            })
               .then((res) => res.json())
               .then((res) => {
                 console.log('RES', res)
