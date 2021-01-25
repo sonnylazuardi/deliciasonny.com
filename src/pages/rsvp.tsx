@@ -41,6 +41,10 @@ const Rsvp = () => {
 
             fetch(`https://plugin-api.sonnylab.com/bypasscors`, {
               method: 'POST',
+              headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+              },
               body: JSON.stringify({
                 url: `https://app.integrately.com/a/webhooks/e9e1e34f465a4790a8543dd7f251d417`,
                 json: true,
