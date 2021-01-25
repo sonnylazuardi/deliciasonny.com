@@ -3,6 +3,7 @@ import tw from 'twin.macro'
 import { Logo, Layout, Button, Link } from '../components'
 import GroomsBride from '../images/groomsbride.png'
 import QRImage from '../images/qrocbc.png'
+import Paynow from '../images/paynow.jpg'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Butterfly from '../images/butterfly.json'
 import Modal from '../components/Modal'
@@ -134,6 +135,11 @@ const App = () => {
             <div tw="">Transfer via BCA</div>
             <div tw="font-bold text-2xl">8090138651</div>
             <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
+
+            <div tw="">Transfer via PayNow</div>
+            <div tw="flex items-center justify-center">
+              <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
+            </div>
 
             <div tw="">Transfer via Paypal</div>
             <div tw="flex items-center justify-center">
