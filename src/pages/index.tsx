@@ -4,6 +4,7 @@ import { Logo, Layout, Button, Link } from '../components'
 import GroomsBride from '../images/groomsbride.png'
 import QRImage from '../images/qrocbc.png'
 import Paynow from '../images/paynow.jpg'
+import Googlepay from '../images/googlepay.jpg'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Butterfly from '../images/butterfly.json'
 import Modal from '../components/Modal'
@@ -139,6 +140,11 @@ const App = () => {
             <div tw="">Transfer via PayNow</div>
             <div tw="flex items-center justify-center">
               <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
+            </div>
+
+            <div tw="">Transfer via GooglePay</div>
+            <div tw="flex items-center justify-center">
+              <img src={Googlepay} tw="mx-auto w-80 mb-16 rounded-lg" />
             </div>
 
             <div tw="">Transfer via Paypal</div>
