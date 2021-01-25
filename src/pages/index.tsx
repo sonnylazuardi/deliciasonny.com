@@ -38,11 +38,21 @@ const App = () => {
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
             Wedding Schedule
           </div>
+
+          <div tw="text-center">
+            Due to the current situation, we opted for an intimate wedding
+            ceremony with only immediate family present. Hence, we humbly
+            solicit your presence through the link below.
+          </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
-            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
+            <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
               HOLY
               <br />
               MATRIMONY
+              <div tw="text-sm text-black font-normal tracking-normal px-6 py-4">
+                We would feel gratified to have you among us when the marriage
+                ceremony solemnized.
+              </div>
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
               <div tw="text-lg">SATURDAY</div>
