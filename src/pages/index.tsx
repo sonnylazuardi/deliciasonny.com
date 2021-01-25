@@ -59,8 +59,8 @@ const App = () => {
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
               <div tw="text-lg">SATURDAY</div>
               <div tw="font-bold">20.03.2021</div>
-              <div tw="text-lg">17.00 WITA</div>
-              <div tw="text-lg mb-4">17.00 SGT</div>
+              <div tw="text-lg">15.30 WIB</div>
+              <div tw="text-lg mb-4">16.30 SGT</div>
               <div tw="px-12">
                 <div tw="flex mb-4">
                   <Link

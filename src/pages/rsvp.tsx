@@ -240,7 +240,7 @@ const Rsvp = () => {
               MATRIMONY
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">17.00 WITA - 18.00 WITA</div>
+              <div tw="text-lg mb-4">16.30 WITA - 17.30 WITA</div>
             </div>
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
