@@ -39,14 +39,17 @@ const Rsvp = () => {
               id: loadingToast
             })
 
-            fetch(`https://hooks.zapier.com/hooks/catch/9243627/o004b9z/`, {
-              method: 'POST',
-              body: JSON.stringify({
-                name: data[0].name,
-                email: data[0].email,
-                userId: data[0].id
-              })
-            })
+            fetch(
+              `https://app.integrately.com/a/webhooks/de231a4b283c466691a3583016121ed3`,
+              {
+                method: 'POST',
+                body: JSON.stringify({
+                  name: data[0].name,
+                  email: data[0].email,
+                  userId: data[0].id
+                })
+              }
+            )
               .then((res) => res.json())
               .then((res) => {
                 console.log('RES', res)
