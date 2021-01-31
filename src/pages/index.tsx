@@ -113,7 +113,7 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white relative">
-        <div tw="absolute -top-24 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko" />
+        <div tw="absolute -top-24 -left-16 w-48 h-48 bg-cover transform bg-gingko" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
@@ -125,7 +125,7 @@ const App = () => {
             tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
             style={{ maxWidth: 640 }}
           >
-            <div tw="">Transfer via OCBC QR</div>
+            <div tw="">Transfer via OCBC NISP QR</div>
             <div tw="font-bold text-2xl">545-810-22349-9</div>
             <div tw="mb-4 font-bold">Delicia Ulyta</div>
             <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
