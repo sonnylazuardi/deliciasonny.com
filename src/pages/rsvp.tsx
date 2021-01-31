@@ -240,7 +240,7 @@ const Rsvp = () => {
               MATRIMONY
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">16.30 WITA - 17.30 WITA</div>
+              <div tw="text-lg mb-4">16.30 WITA - 18.00 WITA</div>
             </div>
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
@@ -250,7 +250,7 @@ const Rsvp = () => {
               RECEPTION
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">19.00 WITA - 21.00 WITA</div>
+              <div tw="text-lg mb-4">19.00 WITA</div>
             </div>
           </div>
 
@@ -258,7 +258,7 @@ const Rsvp = () => {
             <div tw="flex">
               <Link
                 isSecondary={true}
-                href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T130000Z&text=Delicia%20%26%20Sonny%20Wedding&location=Venue%3A%20Kamaya%20Bali%20Wedding%20&details=Venue%3A%20Kamaya%20Bali%20Wedding%20%20https%3A%2F%2Fgoo.gl%2Fmaps%2FjS3UQ2idTiM8tAGN9"
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Venue%3A+https%3A%2F%2Fgoo.gl%2Fmaps%2FYVzctKQftFVes6ZN6&location=Bali&dates=20210320T083000Z%2F20210320T130000Z"
               >
                 Add to Calendar
               </Link>

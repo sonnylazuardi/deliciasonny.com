@@ -11,7 +11,8 @@ import Modal from '../components/Modal'
 const App = () => {
   const [showModal, setShowModal] = React.useState(false)
   return (
-    <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden`}>
+    <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden relative`}>
+      <div tw="absolute -top-16 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko z-10" />
       <div
         className="container"
         tw="mx-auto flex flex-col items-center relative"
@@ -22,8 +23,8 @@ const App = () => {
         <div tw="w-full sm:w-3/5 -mt-8">
           <img src={GroomsBride} />
         </div>
-        <div tw="absolute sm:-right-10 sm:h-64 sm:w-64 -top-24 -right-24 w-56 h-56 bg-contain transform rotate-180 bg-gingko z-10" />
-        <div tw="w-20 h-20 absolute sm:bottom-64 sm:left-10 left-0 bottom-48">
+
+        <div tw="w-20 h-20 absolute ml-40 top-32">
           <Player
             autoplay={true}
             loop={true}
@@ -35,7 +36,7 @@ const App = () => {
       </div>
       <div tw="py-24 bg-white relative">
         <div tw="absolute left-0 right-0 h-10 bg-white" style={{ top: -40 }} />
-        <div tw="absolute -top-10 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
+        <div tw="absolute -top-36 -left-16 w-48 h-48 bg-cover transform bg-gingko" />
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
             Wedding Schedule
@@ -51,10 +52,6 @@ const App = () => {
               HOLY
               <br />
               MATRIMONY
-              <div tw="text-sm text-black font-normal tracking-normal px-6 py-4">
-                We would feel gratified to have you among us when the marriage
-                ceremony solemnized.
-              </div>
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
               <div tw="text-lg">SATURDAY</div>
@@ -73,7 +70,7 @@ const App = () => {
                 <div tw="flex">
                   <Link
                     isSecondary={true}
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20210320T090000Z%2F20210320T110000Z&text=Delicia%20%26%20Sonny%20Holy%20Matrimony&location=Bali%2C%20Indonesia&details=Holy%20Matrimony%20Live%20Streaming%3A%20https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr7oYUQ44RT52UvtcnewOfw"
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Live+Stream%3A+https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr7oYUQ44RT52UvtcnewOfw&location=Bali&dates=20210320T083000Z%2F20210320T100000Z"
                   >
                     Add to Calendar
                   </Link>
@@ -99,7 +96,7 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white bg-opacity-30 relative">
-        <div tw="absolute top-0 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
+        <div tw="absolute -top-24 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
@@ -116,7 +113,7 @@ const App = () => {
         </div>
       </div>
       <div tw="py-24 bg-white relative">
-        <div tw="absolute top-0 -right-16 w-48 h-28 bg-cover transform rotate-180 bg-gingko" />
+        <div tw="absolute -top-24 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
@@ -140,24 +137,6 @@ const App = () => {
             <div tw="">Transfer via PayNow</div>
             <div tw="flex items-center justify-center">
               <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
-            </div>
-
-            <div tw="">Transfer via GooglePay</div>
-            <div tw="flex items-center justify-center">
-              <img src={Googlepay} tw="mx-auto w-80 mb-16 rounded-lg" />
-            </div>
-
-            <div tw="">Transfer via Paypal</div>
-            <div tw="flex items-center justify-center">
-              <div tw="p-8">
-                <Link
-                  isSecondary={true}
-                  href="https://www.paypal.me/sonnylazuardi"
-                  tw="mb-4 font-bold"
-                >
-                  Paypal Sonny
-                </Link>
-              </div>
             </div>
           </div>
         </div>
