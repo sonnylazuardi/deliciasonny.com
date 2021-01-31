@@ -60,17 +60,14 @@ const App = () => {
               <div tw="text-lg mb-4">16.30 SGT</div>
               <div tw="px-12">
                 <div tw="flex mb-4">
-                  <Link
-                    isPrimary={true}
-                    href="https://www.youtube.com/channel/UCr7oYUQ44RT52UvtcnewOfw"
-                  >
+                  <Link isPrimary={true} href="https://youtu.be/NDTuzo31Hlw">
                     Live Stream
                   </Link>
                 </div>
                 <div tw="flex">
                   <Link
                     isSecondary={true}
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Live+Stream%3A+https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCr7oYUQ44RT52UvtcnewOfw&location=Bali&dates=20210320T083000Z%2F20210320T100000Z"
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Live+Streaming%3A+https%3A%2F%2Fyoutu.be%2FNDTuzo31Hlw&location=Bali&dates=20210320T083000Z%2F20210320T100000Z"
                   >
                     Add to Calendar
                   </Link>
