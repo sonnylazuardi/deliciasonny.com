@@ -39,16 +39,20 @@ const Rsvp = () => {
               id: loadingToast
             })
 
-            fetch(`https://plugin-api.sonnylab.com/sendrsvp`, {
+            fetch(`https://plugin-api.sonnylab.com/bypasscors`, {
               method: 'POST',
               headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
               },
               body: JSON.stringify({
-                name: data[0].name,
-                email: data[0].email,
-                userId: data[0].id
+                url: `https://maker.ifttt.com/trigger/register_rsvp/with/key/iTd4iW7OdLj4IaUob4eB8vd9-_amX2Mu8ThmPnaGWtp`,
+                json: true,
+                body: {
+                  value1: data[0].name,
+                  value3: data[0].email,
+                  value2: data[0].id
+                }
               })
             })
               .then((res) => res.json())
