@@ -272,6 +272,30 @@ const Rsvp = () => {
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
         >
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
+            Dress Code
+          </div>
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900">
+            <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
+              Ladies
+              <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex font-normal">
+                Formal Summer Dress
+              </div>
+            </div>
+            <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
+              Men
+              <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex font-normal">
+                Summer Suit / Linen Shirt
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div tw="py-24 bg-white relative">
+        <div
+          className="container"
+          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative text-center"
+        >
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
             Location
           </div>
           <div tw="font-poppin font-semibold mb-2">Kamaya Bali Wedding</div>
