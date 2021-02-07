@@ -174,27 +174,44 @@ const Rsvp = () => {
                 </div>
               </div>
               {showPerson ? (
-                <div tw="mb-10">
-                  <select
-                    css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 bg-white rounded-md p-4 mb-4 appearance-none`}
-                    name="person"
-                    ref={register({ validate: (val) => val != '' })}
-                    onChange={(e) => {
-                      if (e.target.value === '2') {
-                        setShowPlusOne(true)
-                      } else {
-                        setShowPlusOne(false)
-                      }
-                    }}
-                  >
-                    <option value="1">1 Person</option>
-                    <option value="2">2 (With Partner)</option>
-                  </select>
-                  <div tw="text-xs text-gold-900">
-                    {errors.name && 'Please choose number of people'}
+                <>
+                  <div tw="mb-10">
+                    <select
+                      css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 bg-white rounded-md p-4 mb-4 appearance-none`}
+                      name="person"
+                      ref={register({ validate: (val) => val != '' })}
+                      onChange={(e) => {
+                        if (e.target.value === '2') {
+                          setShowPlusOne(true)
+                        } else {
+                          setShowPlusOne(false)
+                        }
+                      }}
+                    >
+                      <option value="1">1 Person</option>
+                      <option value="2">2 (With Partner)</option>
+                    </select>
+                    <div tw="text-xs text-gold-900">
+                      {errors.name && 'Please choose number of people'}
+                    </div>
                   </div>
-                </div>
+                  <div tw="mb-10 ">
+                    <label>What should we know?</label>
+                    <input
+                      name="info"
+                      ref={register({ required: false })}
+                      css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
+                      type="text"
+                      aria-label="What should we know"
+                      placeholder="E.g food alergic, will bring a baby, etc"
+                    />
+                    <div tw="text-xs text-gold-900">
+                      {errors.info && 'What should we know is required'}
+                    </div>
+                  </div>
+                </>
               ) : null}
+
               {showPlusOne ? (
                 <div tw="mb-10 ">
                   <label>Partner's Full Name</label>
