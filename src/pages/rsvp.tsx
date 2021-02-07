@@ -330,7 +330,7 @@ const Rsvp = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white relative text-center font-sans">
+      <div tw="py-24 bg-gold-100 relative text-center font-sans">
         © 2020 by{' '}
         <a href="https://sonnylab.com" tw="font-semibold">
           sonnylab
