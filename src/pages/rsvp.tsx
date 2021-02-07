@@ -215,14 +215,14 @@ const Rsvp = () => {
 
               {showPerson ? (
                 <div tw="mb-10 ">
-                  <label>What should we know?</label>
+                  <label>Anything that we should know?</label>
                   <input
                     name="info"
                     ref={register({ required: false })}
                     css={tw`focus:ring-1 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md p-4 mb-4`}
                     type="text"
                     aria-label="What should we know"
-                    placeholder="E.g food alergic, will bring a baby, etc"
+                    placeholder="E.g: i am allergic to nuts, i will bring a baby, etc"
                   />
                   <div tw="text-xs text-gold-900">
                     {errors.info && 'What should we know is required'}
