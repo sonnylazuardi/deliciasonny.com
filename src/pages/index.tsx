@@ -116,11 +116,8 @@ const App = () => {
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
-            Electronic Giving
-          </div>
           <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)}>
-            👀
+            Electronic Giving
           </Button>
           {showGiving ? (
             <>
