@@ -10,6 +10,7 @@ import Butterfly from '../images/butterfly.json'
 import Modal from '../components/Modal'
 const App = () => {
   const [showModal, setShowModal] = React.useState(false)
+  const [showGiving, setShowGiving] = React.useState(false)
   return (
     <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden relative`}>
       <div tw="absolute -top-16 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko z-10" />
@@ -118,24 +119,31 @@ const App = () => {
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
             Electronic Giving
           </div>
-          <div
-            tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
-            style={{ maxWidth: 640 }}
-          >
-            <div tw="">Transfer via OCBC NISP QR</div>
-            <div tw="font-bold text-2xl">545-810-22349-9</div>
-            <div tw="mb-4 font-bold">Delicia Ulyta</div>
-            <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
+          <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)}>
+            👀
+          </Button>
+          {showGiving ? (
+            <>
+              <div
+                tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
+                style={{ maxWidth: 640 }}
+              >
+                <div tw="">Transfer via OCBC NISP QR</div>
+                <div tw="font-bold text-2xl">545-810-22349-9</div>
+                <div tw="mb-4 font-bold">Delicia Ulyta</div>
+                <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
 
-            <div tw="">Transfer via BCA</div>
-            <div tw="font-bold text-2xl">8090138651</div>
-            <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
+                <div tw="">Transfer via BCA</div>
+                <div tw="font-bold text-2xl">8090138651</div>
+                <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
 
-            <div tw="">Transfer via PayNow</div>
-            <div tw="flex items-center justify-center">
-              <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
-            </div>
-          </div>
+                <div tw="">Transfer via PayNow</div>
+                <div tw="flex items-center justify-center">
+                  <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
+                </div>
+              </div>
+            </>
+          ) : null}
         </div>
       </div>
       <div tw="py-24 bg-gold-100 relative text-center font-sans">
