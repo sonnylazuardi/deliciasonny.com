@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Delicia Sonny Wedding`,
-    description: `Delicia Sonny Wedding`,
-    author: `@sonnylazuardi`
+    title: `Ridho Fitri Wedding`,
+    description: `Ridho Fitri Wedding`,
+    author: `@convyusboy`
   },
   plugins: [
     { resolve: `gatsby-plugin-emotion` },

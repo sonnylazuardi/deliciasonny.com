@@ -253,22 +253,22 @@ const Rsvp = () => {
 
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900">
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
-              HOLY
+              AKAD
               <br />
-              MATRIMONY
+              PERNIKAHAN
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">16.30 WITA - 18.00 WITA</div>
+              <div tw="text-lg mb-4">08.00 WIB - 09.00 WIB</div>
             </div>
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
             <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
-              WEDDING
+              RESEPSI
               <br />
-              RECEPTION
+              PERNIKAHAN
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-wide font-poppin justify-center items-center flex">
-              <div tw="text-lg mb-4">19.00 WITA</div>
+              <div tw="text-lg mb-4">10.00 WIB - 12.00 WIB</div>
             </div>
           </div>
 
@@ -276,7 +276,7 @@ const Rsvp = () => {
             <div tw="flex">
               <Link
                 isSecondary={true}
-                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Venue%3A+https%3A%2F%2Fgoo.gl%2Fmaps%2FYVzctKQftFVes6ZN6&location=Bali&dates=20210320T083000Z%2F20210320T130000Z"
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Fitri+%26+Ridho+Wedding&details=Venue%3A+https%3A%2F%2Fgoo.gl%2Fmaps%2FYVzctKQftFVes6ZN6&location=Malang&dates=20211121T080000Z%2F20211121T120000Z"
               >
                 Add to Calendar
               </Link>
@@ -293,7 +293,7 @@ const Rsvp = () => {
             Dress Code
           </div>
           <div tw="text-2xl font-poppin text-gold-900 text-center mb-12 mt-12 font-bold">
-            Beach Formal
+            Biru/Pink
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900">
             <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-2xl tracking-widest sm:mb-0 mb-12 font-bold font-poppin">
@@ -319,17 +319,15 @@ const Rsvp = () => {
           <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12 mt-12">
             Location
           </div>
-          <div tw="font-poppin font-semibold mb-2">Kamaya Bali Wedding</div>
+          <div tw="font-poppin font-semibold mb-2">Hotel Santika Premiere Malang Wedding</div>
           <div tw="font-poppin mb-4 text-sm">
-            Jl. Pantai Suluban, Pecatu, Kuta Sel., Kabupaten Badung, Uluwatu
-            <br />
-            Bali, Pecatu, Bali 80361, Indonesia
+            Jl. Letjen Sutoyo No.79, Lowokwaru, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141, Indonesia
           </div>
           <div tw="flex mb-4 items-center justify-center">
             <div tw="py-4">
               <Link
                 isPrimary={true}
-                href="https://goo.gl/maps/nbgyi5VCDaChsd7q6"
+                href="https://goo.gl/maps/3iNaQDGBVwUxqbsm9"
               >
                 Direction
               </Link>
@@ -344,7 +342,7 @@ const Rsvp = () => {
                 />
 
                 <Marker position={position}>
-                  <Popup>Kamaya Bali Wedding</Popup>
+                  <Popup>Hotel Santika Premiere Malang Wedding</Popup>
                 </Marker>
               </Map>
             )}
@@ -352,9 +350,9 @@ const Rsvp = () => {
         </div>
       </div>
       <div tw="py-24 bg-gold-100 relative text-center font-sans">
-        © 2020 by{' '}
-        <a href="https://sonnylab.com" tw="font-semibold">
-          sonnylab
+        © 2021 by{' '}
+        <a href="https://akbarisanto.com" tw="font-semibold">
+          akbarisanto
         </a>
       </div>
       <Toaster />

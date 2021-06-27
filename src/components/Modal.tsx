@@ -31,9 +31,8 @@ const Modal = ({ setShowModal }) => {
             Invitation Only
           </div>
           <div css={tw`mb-10 text-sm`}>
-            Hi there! Thank you and welcome to Delicia & Sonny's wedding
-            website. We are so excited to see you here. Please enter your pin
-            below to RSVP for the wedding reception.
+            Hi there! Thank you and welcome to Ridho & Fitri's wedding
+            website. We are so excited to see you here.
           </div>
           <form
             onSubmit={(e) => {

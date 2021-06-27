@@ -68,7 +68,7 @@ const App = () => {
                 <div tw="flex">
                   <Link
                     isSecondary={true}
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Delicia+%26+Sonny+Wedding&details=Live+Streaming%3A+https%3A%2F%2Fyoutu.be%2FNDTuzo31Hlw&location=Bali&dates=20210320T083000Z%2F20210320T100000Z"
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Fitri+%26+Ridho+Wedding&details=Live+Streaming%3A+https%3A%2F%2Fyoutu.be%2FNDTuzo31Hlw&location=Malang&dates=20211121T080000Z%2F20211121T120000Z"
                   >
                     Add to Calendar
                   </Link>
@@ -125,14 +125,14 @@ const App = () => {
                 tw="mx-auto w-full p-4 leading-loose font-sans items-center justify-center text-center"
                 style={{ maxWidth: 640 }}
               >
-                <div tw="">Transfer via OCBC NISP QR</div>
-                <div tw="font-bold text-2xl">545-810-22349-9</div>
-                <div tw="mb-4 font-bold">Delicia Ulyta</div>
+                <div tw="">Transfer via BCA</div>
+                <div tw="font-bold text-2xl">0342119075</div>
+                <div tw="mb-4 font-bold">Fitri Lin</div>
                 <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
 
                 <div tw="">Transfer via BCA</div>
-                <div tw="font-bold text-2xl">8090138651</div>
-                <div tw="font-bold mb-16">Sonny Lazuardi Hermawan</div>
+                <div tw="font-bold text-2xl">2860111236</div>
+                <div tw="font-bold mb-16">Ridho Akbarisanto</div>
 
                 <div tw="">Transfer via PayNow</div>
                 <div tw="flex items-center justify-center">
@@ -145,8 +145,8 @@ const App = () => {
       </div>
       <div tw="py-24 bg-gold-100 relative text-center font-sans">
         © 2021 by{' '}
-        <a href="https://sonnylab.com" tw="font-semibold">
-          sonnylab
+        <a href="https://akbarisanto.com" tw="font-semibold">
+          akbarisanto
         </a>
       </div>
       {showModal ? <Modal setShowModal={setShowModal} /> : null}
