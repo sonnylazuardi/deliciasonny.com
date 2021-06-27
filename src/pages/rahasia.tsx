@@ -62,9 +62,9 @@ const Confirm = () => {
         </div>
       </div>
       <div tw="py-24 bg-white relative text-center font-sans">
-        © 2020 by{' '}
-        <a href="https://sonnylab.com" tw="font-semibold">
-          sonnylab
+        © 2021 by{' '}
+        <a href="https://akbarisanto.com" tw="font-semibold">
+          akbarisanto
         </a>
       </div>
       <Toaster />
