@@ -38,27 +38,6 @@ const Rsvp = () => {
             toast.success('Please check your email.', {
               id: loadingToast
             })
-
-            fetch(`https://plugin-api.sonnylab.com/bypasscors`, {
-              method: 'POST',
-              headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({
-                url: `https://maker.ifttt.com/trigger/register_rsvp/with/key/iTd4iW7OdLj4IaUob4eB8vd9-_amX2Mu8ThmPnaGWtp`,
-                json: true,
-                body: {
-                  value1: data[0].name,
-                  value3: data[0].email,
-                  value2: data[0].id
-                }
-              })
-            })
-              .then((res) => res.json())
-              .then((res) => {
-                console.log('RES', res)
-              })
           }
           navigate('#schedule')
         } else {
