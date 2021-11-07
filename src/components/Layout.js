@@ -67,7 +67,7 @@ const Layout = ({ children, ...rest }) => {
           content="width=device-width,initial-scale=1,user-scalable=no"
         />
         <meta name="robots" content="NOODP" />
-        <meta name="theme-color" content="#eeeeee" />
+        <meta name="theme-color" content="#fff9f1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="google" content="notranslate" />

@@ -5,41 +5,40 @@ import GroomsBride from '../images/groomsbride.png'
 import QRImage from '../images/qrocbc.png'
 import Paynow from '../images/paynow.jpg'
 import Googlepay from '../images/googlepay.jpg'
-import { Player } from '@lottiefiles/react-lottie-player'
-import Butterfly from '../images/butterfly.json'
-import Modal from '../components/Modal'
 const App = () => {
-  const [showModal, setShowModal] = React.useState(false)
   const [showGiving, setShowGiving] = React.useState(false)
   return (
-    <Layout css={tw`min-h-screen bg-gold-100 overflow-hidden relative`}>
-      <div tw="absolute -top-16 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko z-10" />
+    <Layout css={tw`min-h-screen overflow-hidden relative`}>
+      <div tw="absolute -top-16 -right-16 w-48 h-48 transform rotate-180 z-10" />
       <div
         className="container"
         tw="mx-auto flex flex-col items-center relative"
       >
-        <div tw="p-5 block mt-24">
-          <Logo />
+        {/*<div tw="p-5 block mt-24">*/}
+          {/*<Logo />*/}
+        {/*</div>*/}
+        <div tw="text-4xl sm:text-5xl text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
+          THE WEDDING OF
+        </div>
+        <div tw="text-3xl sm:text-4xl font-brittany text-center" style={{color:"#2a3b72"}}>
+          Fitri Lin
+        </div>
+        <div tw="" style={{color:"#2a3b72"}}>
+          &
+        </div>
+        <div tw="text-3xl sm:text-4xl font-brittany text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
+          Ridh Akbarisanto
         </div>
         <div tw="w-full sm:w-3/5 -mt-8">
-          <img src={GroomsBride} />
+          {/*<img src={GroomsBride} />*/}
         </div>
 
-        <div tw="w-20 h-20 absolute ml-40 top-32">
-          <Player
-            autoplay={true}
-            loop={true}
-            controls={false}
-            src={Butterfly}
-            style={{ height: '100%', width: '100%' }}
-          ></Player>
-        </div>
       </div>
-      <div tw="py-24 bg-white relative">
-        <div tw="absolute left-0 right-0 h-10 bg-white" style={{ top: -40 }} />
-        <div tw="absolute -top-36 -left-16 w-48 h-48 bg-cover transform bg-gingko" />
+      <div tw="py-24 relative bg-white" style={{color:"#2a3b72"}}>
+        <div tw="absolute left-0 right-0 h-10" style={{ top: -40 }} />
+        <div tw="absolute -top-36 -left-16 w-48 h-48 transform" />
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12">
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
             Wedding Schedule
           </div>
 
@@ -48,75 +47,63 @@ const App = () => {
             ceremony with only immediate family present. Hence, we humbly
             solicit your presence through the link below.
           </div>
-          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
+          <div tw="grid grid-cols-2 gap-4 text-center font-poppin py-20">
             <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
-              HOLY
+              MINGGU
               <br />
-              MATRIMONY
+              21
+              <br />
+              NOV
+              <br />
+              21
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-              <div tw="text-lg">SATURDAY</div>
-              <div tw="font-bold">20.03.2021</div>
-              <div tw="text-lg">15.30 WIB</div>
-              <div tw="text-lg mb-4">16.30 SGT</div>
-              <div tw="px-12">
-                <div tw="flex mb-4">
-                  <Link isPrimary={true} href="https://youtu.be/NDTuzo31Hlw">
-                    Live Stream
-                  </Link>
-                </div>
-                <div tw="flex">
-                  <Link
-                    isSecondary={true}
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Fitri+%26+Ridho+Wedding&details=Live+Streaming%3A+https%3A%2F%2Fyoutu.be%2FNDTuzo31Hlw&location=Malang&dates=20211121T080000Z%2F20211121T120000Z"
-                  >
-                    Add to Calendar
-                  </Link>
-                </div>
-              </div>
+              <div tw="text-lg">Akad</div>
+              <div tw="text-lg">08.00 WIB</div>
+              <br />
+              <div tw="text-lg">Intimate Reception</div>
+              <div tw="text-lg">10.00 WIB</div>
             </div>
           </div>
-          <div tw="grid grid-cols-2 gap-4 text-center font-poppin text-gold-900 py-20">
-            <div tw="col-span-full sm:col-span-1 flex items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
-              WEDDING
-              <br />
-              RSVP
+          <div tw="grid grid-cols-3 gap-4 text-center font-poppin py-20">
+            <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
             </div>
-            <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest">
-              <div tw="font-brittany text-4xl mb-8">Invitation Only</div>
-              <div tw="px-12">
-                <Button isSecondary={true} onClick={() => setShowModal(true)}>
-                  RSVP
-                </Button>
+            <div tw="px-12 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
+              <div tw="flex mb-4">
+                <Link isPrimary={true} href="https://youtu.be/Ne-r6KDFWH4" style={{backgroundColor:"#2a3b72"}}>
+                  Live Stream
+                </Link>
               </div>
+            </div>
+            <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
             </div>
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white bg-opacity-30 relative">
-        <div tw="absolute -top-24 -right-16 w-48 h-48 bg-cover transform rotate-180 bg-gingko" />
+      <div tw="py-24 relative">
+        <div tw="absolute -top-24 -right-16 w-48 h-48 transform rotate-180" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12">
+          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
             Our Little Story
           </div>
           <div
             tw="mx-auto w-full leading-loose font-sans p-1"
             style={{ maxWidth: 640 }}
           >
-            <img src="/images/story.png" tw="w-full" />
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white relative">
-        <div tw="absolute -top-24 -left-16 w-48 h-48 bg-cover transform bg-gingko" />
+      <div tw="py-24 bg-white relative" style={{color:"#2a3b72"}}>
+        <div tw="absolute -top-24 -left-16 w-48 h-48 transform" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
+          style={{color:"#2a3b72"}}
         >
-          <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)}>
+          <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)} style={{color:"#2a3b72"}}>
             Electronic Giving
           </Button>
           {showGiving ? (
@@ -143,13 +130,12 @@ const App = () => {
           ) : null}
         </div>
       </div>
-      <div tw="py-24 bg-gold-100 relative text-center font-sans">
+      <div tw="py-24 relative text-center font-sans" style={{color:"#2a3b72"}}>
         © 2021 by{' '}
         <a href="https://akbarisanto.com" tw="font-semibold">
           akbarisanto
         </a>
       </div>
-      {showModal ? <Modal setShowModal={setShowModal} /> : null}
     </Layout>
   )
 }
