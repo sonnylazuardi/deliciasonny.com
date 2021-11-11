@@ -3,8 +3,9 @@
 @font-face {
   font-family: 'Brittany Signature';
   src: url('../../static/fonts/BrittanySignature.ttf') format('truetype');
-  font-weight: 500;
+  font-weight: 100;
   font-style: normal;
+  font-size: 40px;
 }
 
 html, body {
@@ -12,11 +13,6 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.leaflet-container {
-  height: 400px;
-  width: 100%;
 }
 
 body {

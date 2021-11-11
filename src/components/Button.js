@@ -13,7 +13,7 @@ const Button = styled.button(
     isPrimary && tw`bg-gold-900 text-white`,
 
     // Combine regular css with tailwind classes within backticks
-    isSecondary && tw`border-2 border-gold-900 text-gold-900`,
+    isSecondary && tw`border-2 border-gold-100 text-gold-900`,
 
     disabled ? tw`opacity-50` : tw`opacity-100`,
 

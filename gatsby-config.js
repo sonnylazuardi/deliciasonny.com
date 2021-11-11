@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Ridho Fitri Wedding`,
-    description: `Ridho Fitri Wedding`,
+    title: `The Wedding of Fitri & Ridho`,
+    description: `The Wedding of Fitri & Ridho`,
     author: `@convyusboy`
   },
   plugins: [

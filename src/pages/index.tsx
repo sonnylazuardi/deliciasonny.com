@@ -17,35 +17,51 @@ const App = () => {
         {/*<div tw="p-5 block mt-24">*/}
           {/*<Logo />*/}
         {/*</div>*/}
-        <div tw="text-4xl sm:text-5xl text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
+        <div tw="font-mono text-center" style={{
+          right: 0,
+          bottom: '4rem',
+          marginTop: '10rem',
+          fontSize: '1rem',
+          color: "#2a3b72"
+        }}>
           THE WEDDING OF
         </div>
-        <div tw="text-3xl sm:text-4xl font-brittany text-center" style={{color:"#2a3b72"}}>
+        <div tw="font-brittany text-center" style={{
+          marginTop: '10rem',
+          fontSize: '6.5rem',
+          color:"#2a3b72"
+        }}>
           Fitri Lin
         </div>
-        <div tw="" style={{color:"#2a3b72"}}>
+        <div tw="font-brittany text-center" style={{
+          fontSize: '2rem',
+          color:"#2a3b72"
+        }}>
           &
         </div>
-        <div tw="text-3xl sm:text-4xl font-brittany text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
-          Ridh Akbarisanto
+        <div tw="font-brittany text-center" style={{
+          marginBottom: '10rem',
+          fontSize: '6.5rem',
+          color:"#2a3b72"
+        }}>
+          Ridho Akbarisanto
         </div>
-        <div tw="w-full sm:w-3/5 -mt-8">
-          {/*<img src={GroomsBride} />*/}
-        </div>
-
       </div>
-      <div tw="py-24 relative bg-white" style={{color:"#2a3b72"}}>
+      <div tw="relative bg-white mx-auto flex flex-col items-center relative">
+        <div tw="w-full">
+          <img src={GroomsBride} />
+        </div>
+      </div>
+      <div tw="py-24 relative" style={{color:"#2a3b72"}}>
         <div tw="absolute left-0 right-0 h-10" style={{ top: -40 }} />
         <div tw="absolute -top-36 -left-16 w-48 h-48 transform" />
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
-            Wedding Schedule
+          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
+            Jadwal Acara
           </div>
 
           <div tw="text-center">
-            Due to the current situation, we opted for an intimate wedding
-            ceremony with only immediate family present. Hence, we humbly
-            solicit your presence through the link below.
+            Tanpa mengurangi rasa hormat dan untuk dapat menerapkan protokol kesehatan secara maksimal, maka kami melakukan pembatasan terhadap tamu yang hadir pada acara ini. Oleh karena itu, kami memohon doa restu dan mengundang bapak/ibu dan teman-teman sekalian untuk dapat menyaksikan prosesi pernikahan kami secara live streaming melalui link di bawah ini:
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin py-20">
             <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest sm:mb-0 mb-12 font-bold">
@@ -80,14 +96,14 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 relative">
+      <div tw="py-24 relative bg-white">
         <div tw="absolute -top-24 -right-16 w-48 h-48 transform rotate-180" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
         >
-          <div tw="text-4xl sm:text-5xl font-brittany text-gold-900 text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
-            Our Little Story
+          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
+            Our Journey
           </div>
           <div
             tw="mx-auto w-full leading-loose font-sans p-1"
@@ -96,7 +112,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div tw="py-24 bg-white relative" style={{color:"#2a3b72"}}>
+      <div tw="py-24 relative" style={{color:"#2a3b72"}}>
         <div tw="absolute -top-24 -left-16 w-48 h-48 transform" />
         <div
           className="container"
@@ -104,7 +120,7 @@ const App = () => {
           style={{color:"#2a3b72"}}
         >
           <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)} style={{color:"#2a3b72"}}>
-            Electronic Giving
+            Ingin Kasih Kado?
           </Button>
           {showGiving ? (
             <>
@@ -123,14 +139,14 @@ const App = () => {
 
                 <div tw="">Transfer via PayNow</div>
                 <div tw="flex items-center justify-center">
-                  <img src={Paynow} tw="mx-auto w-80 mb-16 rounded-lg" />
+                  <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
                 </div>
               </div>
             </>
           ) : null}
         </div>
       </div>
-      <div tw="py-24 relative text-center font-sans" style={{color:"#2a3b72"}}>
+      <div tw="py-24 relative bg-white text-center font-sans" style={{color:"#2a3b72"}}>
         © 2021 by{' '}
         <a href="https://akbarisanto.com" tw="font-semibold">
           akbarisanto
