@@ -4,11 +4,14 @@ import { Logo, Layout, Button, Link } from '../components'
 import GroomsBride from '../images/groomsbride.png'
 import ShuangXi from '../images/shuangxi.png'
 import QRImage from '../images/qrocbc.png'
+import QRImage2 from '../images/qrbca2.png'
 import Paynow from '../images/paynow.jpg'
+import Whatsapp from '../images/whatsapp.png'
 import Googlepay from '../images/googlepay.jpg'
 import NameTagFitri from '../images/NameTag_Fitri.png'
+import NameTag from '../images/NameTag.png'
 import NameTagRidho from '../images/NameTag_Ridho.png'
-import Journey from '../images/text.png'
+import Journey from '../images/text2.png'
 const App = () => {
   const [showGiving, setShowGiving] = React.useState(false)
   return (
@@ -28,7 +31,8 @@ const App = () => {
 {/*        <div tw="p-5">
           <img src={ShuangXi} />
         </div>
-*/}        <div tw="w-3/5 p-5">
+*/}
+        <div tw="w-3/5 p-5">
           <img src={NameTagFitri} />
         </div>
         <div tw="font-brittany text-center" style={{
@@ -79,11 +83,11 @@ const App = () => {
               <div tw="text-lg">10.00 WIB</div>
             </div>
           </div>
-          <div tw="grid grid-cols-3 gap-4 text-center font-poppin pt-10">
+          <div tw="grid grid-cols-3 gap-4 text-center font-poppin">
             <div tw="col-span-full sm:col-span-1">
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
-              <div tw="flex mb-4">
+              <div tw="flex">
                 <Link isPrimary={true} href="https://youtu.be/Ne-r6KDFWH4" style={{backgroundColor:"#2a3b72"}}>
                   Live Stream
                 </Link>
@@ -99,12 +103,12 @@ const App = () => {
           className="container"
           tw="mx-auto items-center sm:px-0 relative"
         >
-          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12 mt-12" style={{color:"#2a3b72"}}>
+          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
             Our Journey
           </div>
           <div
             tw="mx-auto w-full leading-loose font-sans p-1"
-            style={{ maxWidth: 640 }}
+            style={{ maxWidth: 800 }}
           >
             <img src={Journey} tw="w-full" />
           </div>
@@ -228,29 +232,37 @@ const App = () => {
                 <div tw="">Transfer via BCA</div>
                 <div tw="font-bold text-2xl">0342119075</div>
                 <div tw="mb-4 font-bold">Fitri Lin</div>
-                <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
+                <img src={QRImage2} tw="mx-auto w-80 mb-16 rounded-lg" />
 
                 <div tw="">Transfer via BCA</div>
                 <div tw="font-bold text-2xl">2860111236</div>
-                <div tw="font-bold mb-16">Ridho Akbarisanto</div>
+                <div tw="font-bold mb-4">Ridho Akbarisanto</div>
+                <img src={QRImage2} tw="mx-auto w-80 mb-16 rounded-lg" />
 
-                <div tw="">Transfer via PayNow</div>
+                <div tw="">Want to contact us instead?</div>
                 <div tw="flex items-center justify-center">
-                  <img src={QRImage} tw="mx-auto w-80 mb-16 rounded-lg" />
+                  <Link href="https://wa.me/+6285649904987">
+                    <img src={Whatsapp} tw="mx-auto w-80 mb-16 rounded-lg" />
+                  </Link>
                 </div>
               </div>
             </>
           ) : null}
         </div>
       </div>
-      <div tw="py-24 relative bg-white text-center font-sans" style={{color:"#2a3b72"}}>
-        © 2021 by{' '}
-        <a href="https://akbarisanto.com" tw="font-semibold">
-          akbarisanto
-        </a>{' & '}
-        <a href="https://sonnylab.com" tw="font-semibold">
-          sonnylab
-        </a>
+      <div tw="py-6 relative bg-white text-center font-sans" style={{color:"#2a3b72"}}>
+        <div tw="w-2/5 pb-6 items-center relative justify-center mx-auto">
+          <img src={NameTag} />
+        </div>
+        <div>
+          © 2021 by{' '}
+          <a href="https://akbarisanto.com" tw="font-semibold">
+            akbarisanto
+          </a>{' & '}
+          <a href="https://sonnylab.com" tw="font-semibold">
+            sonnylab
+          </a>
+        </div>
       </div>
     </Layout>
   )
