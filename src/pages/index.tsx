@@ -88,7 +88,7 @@ const App = () => {
             </div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
               <div tw="flex">
-                <Link isPrimary={true} href="https://youtu.be/Ne-r6KDFWH4" style={{backgroundColor:"#2a3b72"}}>
+                <Link isPrimary={true} href="https://www.youtube.com/watch?v=YYgpNmQODnM" style={{backgroundColor:"#2a3b72"}}>
                   Live Stream
                 </Link>
               </div>
