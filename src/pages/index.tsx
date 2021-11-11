@@ -8,6 +8,7 @@ import Paynow from '../images/paynow.jpg'
 import Googlepay from '../images/googlepay.jpg'
 import NameTagFitri from '../images/NameTag_Fitri.png'
 import NameTagRidho from '../images/NameTag_Ridho.png'
+import Journey from '../images/text.png'
 const App = () => {
   const [showGiving, setShowGiving] = React.useState(false)
   return (
@@ -30,14 +31,6 @@ const App = () => {
 */}        <div tw="w-3/5 p-5">
           <img src={NameTagFitri} />
         </div>
-{/*        <div tw="font-brittany text-center" style={{
-          fontWeight: 'bold',
-          marginTop: '10rem',
-          fontSize: '5rem',
-          color:"#2a3b72"
-        }}>
-          Fitri Lin
-        </div>*/}        
         <div tw="font-brittany text-center" style={{
           fontSize: '4rem',
           color:"#2a3b72"
@@ -49,13 +42,6 @@ const App = () => {
         }}>
           <img src={NameTagRidho} />
         </div>
-{/*        <div tw="font-brittany text-center" style={{
-          marginBottom: '10rem',
-          fontSize: '5rem',
-          color:"#2a3b72"
-        }}>
-          Ridho Akbarisanto
-        </div>*/}
       </div>
       <div tw="relative bg-white mx-auto flex flex-col items-center relative">
         <div tw="w-full">
@@ -70,7 +56,9 @@ const App = () => {
             Jadwal Acara
           </div>
 
-          <div tw="text-center">
+          <div tw="text-center" style={{
+            fontSize: 12
+          }}>
             Tanpa mengurangi rasa hormat dan untuk dapat menerapkan protokol kesehatan secara maksimal, maka kami melakukan pembatasan terhadap tamu yang hadir pada acara ini. Oleh karena itu, kami memohon doa restu dan mengundang bapak/ibu dan teman-teman sekalian untuk dapat menyaksikan prosesi pernikahan kami secara live streaming melalui link di bawah ini:
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin py-10">
@@ -109,16 +97,116 @@ const App = () => {
       <div tw="py-24 relative bg-white">
         <div
           className="container"
-          tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
+          tw="mx-auto items-center sm:px-0 relative"
         >
-          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-24 mt-12" style={{color:"#2a3b72"}}>
+          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12 mt-12" style={{color:"#2a3b72"}}>
             Our Journey
           </div>
           <div
             tw="mx-auto w-full leading-loose font-sans p-1"
             style={{ maxWidth: 640 }}
           >
+            <img src={Journey} tw="w-full" />
           </div>
+{/*          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+              7 Maret 2018 - Fitri pertama kali chat terkait riset UX Bukalapak
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="col-span-full sm:col-span-1"></div>
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'right'
+            }}>
+              5 April 2018 - Pertama kali kenalan langsung, Ridho diinterview Fitri terkait riset UX Bukalapak
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+              22 September 2018 - Fitri pertama kali marah ke Ridho
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="col-span-full sm:col-span-1"></div>
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'right'
+            }}>
+              27 Oktober 2018 - Pertama kali jalan bareng seharian
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+              10 Agustus 2019 - Fitri & Ridho memutuskan untuk bersama
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="col-span-full sm:col-span-1"></div>
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'right'
+            }}>
+              1 Juni 2020 - Fitri & Ridho memutuskan untuk menyudahi hubungan
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+              6 Juni 2020 - Fitri & Ridho memutuskan untuk kembali bersama
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="col-span-full sm:col-span-1"></div>
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'right'
+            }}>
+              17 April 2021 - Pertama kali ke Malang bersama untuk bertemu orang tua Ridho
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+               1 Mei 2021 - Pertama kali ke Pekanbaru bersama untuk bertemu orang tua Fitri
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="col-span-full sm:col-span-1"></div>
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'right'
+            }}>
+              14 November 2021 - Fitri & Ridho menyelenggarakan acara sangjit/lamaran
+            </div>
+          </div>
+          <div tw="grid grid-cols-2 text-center font-poppin">
+            <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
+              fontSize: 15,
+              textAlign: 'left'
+            }}>
+              21 November 2021 - Fitri & Ridho menikah
+            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
+          </div>*/}
         </div>
       </div>
       <div tw="py-24 relative" style={{color:"#2a3b72"}}>
@@ -159,6 +247,9 @@ const App = () => {
         © 2021 by{' '}
         <a href="https://akbarisanto.com" tw="font-semibold">
           akbarisanto
+        </a>{' & '}
+        <a href="https://sonnylab.com" tw="font-semibold">
+          sonnylab
         </a>
       </div>
     </Layout>
