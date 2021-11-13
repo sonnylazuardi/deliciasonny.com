@@ -20,30 +20,39 @@ const App = () => {
         className="container"
         tw="mx-auto flex flex-col items-center relative"
       >
-        <div tw="font-serif font-bold text-center" style={{
-          marginTop: '5rem',
-          marginBottom: '5rem',
-          fontSize: '1rem',
-          color: "#2a3b72"
-        }}>
+        <div
+          tw="font-serif font-bold text-center"
+          style={{
+            marginTop: '5rem',
+            marginBottom: '5rem',
+            fontSize: '1rem',
+            color: '#2a3b72'
+          }}
+        >
           THE WEDDING OF
         </div>
-{/*        <div tw="p-5">
+        {/*        <div tw="p-5">
           <img src={ShuangXi} />
         </div>
 */}
         <div tw="w-3/5 p-5">
           <img src={NameTagFitri} />
         </div>
-        <div tw="font-brittany text-center" style={{
-          fontSize: '4rem',
-          color:"#2a3b72"
-        }}>
+        <div
+          tw="font-brittany text-center"
+          style={{
+            fontSize: '4rem',
+            color: '#2a3b72'
+          }}
+        >
           &
         </div>
-        <div tw="w-full p-5" style={{
-          marginBottom: '10rem'
-        }}>
+        <div
+          tw="w-full p-5"
+          style={{
+            marginBottom: '10rem'
+          }}
+        >
           <img src={NameTagRidho} />
         </div>
       </div>
@@ -52,18 +61,37 @@ const App = () => {
           <img src={GroomsBride} />
         </div>
       </div>
-      <div tw="py-24 relative" style={{color:"#2a3b72"}}>
+      <div
+        tw="py-24 relative"
+        style={{
+          color: '#2a3b72',
+          background: `url('/images/shuangxi.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center'
+        }}
+      >
         <div tw="absolute left-0 right-0 h-10" style={{ top: -40 }} />
         <div tw="absolute -top-36 -left-16 w-48 h-48 transform" />
         <div className="container" tw="mx-auto items-center pb-12 px-4 sm:px-0">
-          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
+          <div
+            tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12"
+            style={{ color: '#2a3b72' }}
+          >
             Jadwal Acara
           </div>
 
-          <div tw="text-center" style={{
-            fontSize: 12
-          }}>
-            Tanpa mengurangi rasa hormat dan untuk dapat menerapkan protokol kesehatan secara maksimal, maka kami melakukan pembatasan terhadap tamu yang hadir pada acara ini. Oleh karena itu, kami memohon doa restu dan mengundang bapak/ibu dan teman-teman sekalian untuk dapat menyaksikan prosesi pernikahan kami secara live streaming melalui link di bawah ini:
+          <div
+            tw="text-center"
+            style={{
+              fontSize: 12
+            }}
+          >
+            Tanpa mengurangi rasa hormat dan untuk dapat menerapkan protokol
+            kesehatan secara maksimal, maka kami melakukan pembatasan terhadap
+            tamu yang hadir pada acara ini. Oleh karena itu, kami memohon doa
+            restu dan mengundang bapak/ibu dan teman-teman sekalian untuk dapat
+            menyaksikan prosesi pernikahan kami secara live streaming melalui
+            link di bawah ini:
           </div>
           <div tw="grid grid-cols-2 gap-4 text-center font-poppin py-10">
             <div tw="col-span-full sm:col-span-1 flex flex-col items-center justify-center text-3xl tracking-widest font-bold">
@@ -84,26 +112,28 @@ const App = () => {
             </div>
           </div>
           <div tw="grid grid-cols-3 gap-4 text-center font-poppin">
-            <div tw="col-span-full sm:col-span-1">
-            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
             <div tw="col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin">
               <div tw="flex">
-                <Link isPrimary={true} href="https://www.youtube.com/watch?v=YYgpNmQODnM" style={{backgroundColor:"#2a3b72"}}>
+                <Link
+                  isPrimary={true}
+                  href="https://www.youtube.com/watch?v=YYgpNmQODnM"
+                  style={{ backgroundColor: '#2a3b72' }}
+                >
                   Live Stream
                 </Link>
               </div>
             </div>
-            <div tw="col-span-full sm:col-span-1">
-            </div>
+            <div tw="col-span-full sm:col-span-1"></div>
           </div>
         </div>
       </div>
       <div tw="py-24 relative bg-white">
-        <div
-          className="container"
-          tw="mx-auto items-center sm:px-0 relative"
-        >
-          <div tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12" style={{color:"#2a3b72"}}>
+        <div className="container" tw="mx-auto items-center sm:px-0 relative">
+          <div
+            tw="text-4xl sm:text-5xl text-gold-900 text-center mb-12"
+            style={{ color: '#2a3b72' }}
+          >
             Our Journey
           </div>
           <div
@@ -112,7 +142,7 @@ const App = () => {
           >
             <img src={Journey} tw="w-full" />
           </div>
-{/*          <div tw="grid grid-cols-2 text-center font-poppin">
+          {/*          <div tw="grid grid-cols-2 text-center font-poppin">
             <div tw="pl-4 pr-4 pb-4 text-gold-100 col-span-full sm:col-span-1 text-2xl tracking-widest font-poppin" style={{
               fontSize: 15,
               textAlign: 'left'
@@ -213,14 +243,18 @@ const App = () => {
           </div>*/}
         </div>
       </div>
-      <div tw="py-24 relative" style={{color:"#2a3b72"}}>
+      <div tw="py-24 relative" style={{ color: '#2a3b72' }}>
         <div tw="absolute -top-24 -left-16 w-48 h-48 transform" />
         <div
           className="container"
           tw="mx-auto items-center pb-12 px-4 sm:px-0 relative"
-          style={{color:"#2a3b72"}}
+          style={{ color: '#2a3b72' }}
         >
-          <Button isSecondary={true} onClick={() => setShowGiving(!showGiving)} style={{color:"#2a3b72"}}>
+          <Button
+            isSecondary={true}
+            onClick={() => setShowGiving(!showGiving)}
+            style={{ color: '#2a3b72' }}
+          >
             Ingin Kasih Kado?
           </Button>
           {showGiving ? (
@@ -250,7 +284,10 @@ const App = () => {
           ) : null}
         </div>
       </div>
-      <div tw="py-6 relative bg-white text-center font-sans" style={{color:"#2a3b72"}}>
+      <div
+        tw="py-6 relative bg-white text-center font-sans"
+        style={{ color: '#2a3b72' }}
+      >
         <div tw="w-2/5 pb-6 items-center relative justify-center mx-auto">
           <img src={NameTag} />
         </div>
@@ -258,7 +295,8 @@ const App = () => {
           © 2021 by{' '}
           <a href="https://akbarisanto.com" tw="font-semibold">
             akbarisanto
-          </a>{' & '}
+          </a>
+          {' & '}
           <a href="https://sonnylab.com" tw="font-semibold">
             sonnylab
           </a>
